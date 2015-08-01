@@ -1,0 +1,96 @@
+# elora stack YAML
+A stack is a collection of services. The default name for this file is `elora.yml`, although other filenames are supported. 
+
+Below is an example `elora.yml`:
+
+```
+web:
+  image: myapp
+  links:
+    - mongo
+mongo:
+  image: mongo
+```
+
+Each key defined in `elora.yml` will create a Kubernetes service with that name. Each service is a dictionary whose keys are documented below.
+
+## image
+The image used to deploy this service.
+
+```
+image: ubuntu
+```
+
+## environment
+A list of environment variables for the service containers (overriding any image-defined environment variables).
+
+```
+environment:
+    PASSWORD: my_password
+```
+
+You can use get the environment variable value from your local shell environment variables, which is very convenient for passwords or any other sensitive information, like this:
+
+```
+environment:
+  - PASSWORD
+```
+
+
+## links
+Link to another service. For services in other stacks, prepend the stack name plus  a '.' symbol.
+
+```
+links:
+ - mongo
+ - staging.mongo
+```
+
+Linked service variables will be inherited.
+
+## ports
+Make ports publictly accesble. Either specify both ports (`HOST:CONTAINER`), or just the container port (a random host port will be chosen).
+
+```
+ports:
+ - "80"
+ - "443:443"
+```
+
+## volumes
+Mount paths as volumes, optionally specifying a path on the host machine (`HOST:CONTAINER`), or an access mode (`HOST:CONTAINER:ro`).
+
+```
+volumes:
+ - /etc/mysql
+ - /sys:/sys
+ - /etc:/etc:ro
+```
+
+## volumes_from
+Mount all of the volumes from another service.  For services in other stacks, prepend the stack name plus  a '.' symbol.
+
+```
+volumes_from:
+ - database
+ - staging.database
+```
+
+## labels
+Indicates the labels associated to this service.
+
+```
+labels:
+ - staging
+```
+
+## command
+Override the default command in the image.
+
+```
+command: echo 'Elora World!'
+```
+
+## Docker-compose non-supported keys
+
+elora.yml has been designed for _docker-compose.yml_ compatibility, but _docker-compose.yml_ keys not documented here are not yet supported.
