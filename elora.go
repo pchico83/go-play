@@ -15,7 +15,7 @@ func main() {
 	app := cli.NewApp()
 	app.Name = "elora"
 	app.Usage = "container orchestration tool (from docker-compose.yml to kubernetes API)"
-	app.Version = "0.1.0"
+	app.Version = "meegosh-dev"
 	app.Author = "Pablo Chico de Guzman"
 	app.Email = "pchico83@gmail.com"
 
