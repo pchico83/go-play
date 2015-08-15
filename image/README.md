@@ -1,17 +1,17 @@
 # Image
 
-Manage private images from the elora cli.
+Manage private images from the d2k8 cli.
 
 
 ## Create an image
 
-Create a private image to be managed by elora.
+Create a private image to be managed by d2k8.
 
-`elora image create name -user user -pwd pwd -url url`
+`d2k8 image create name -user user -pwd pwd -url url`
 
 | Argument    | Meaning       |
 | ----------- | ------------- |
-| name        | name of the image to be identified in elora cli commands |
+| name        | name of the image to be identified in d2k8 cli commands |
 | user        | username to access the private image |
 | pwd         | password to access the private image |
 | url         | url to access the private image |
@@ -21,7 +21,7 @@ Create a private image to be managed by elora.
 
 Retrive image information.
 
-`elora image inspect name`
+`d2k8 image inspect name`
 
 | Argument    | Meaning       |
 | ----------- | ------------- |
@@ -32,14 +32,14 @@ Retrive image information.
 
 Retrieve all private images information.
 
-`elora image list`
+`d2k8 image list`
 
 
 ## Update a private image
 
-Update a private image managed by elora.
+Update a private image managed by d2k8.
 
-`elora image update name --user user -pwd pwd -url url`
+`d2k8 image update name --user user -pwd pwd -url url`
 
 | Argument    | Meaning       |
 | ----------- | ------------- |
@@ -51,9 +51,9 @@ Update a private image managed by elora.
 
 ## Delete a private image
 
-Remove a private image from elora.
+Remove a private image from d2k8.
 
-`elora image remove name`
+`d2k8 image remove name`
 
 | Argument    | Meaning       |
 | ----------- | ------------- |

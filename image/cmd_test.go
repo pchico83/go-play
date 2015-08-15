@@ -1,8 +1,8 @@
 package image_test
 
 import (
-	"github.com/pchico83/elora/image"
-	"github.com/pchico83/elora/utils"
+	"github.com/pchico83/d2k8/image"
+	"github.com/pchico83/d2k8/utils"
 	. "gopkg.in/check.v1"
 	"io/ioutil"
 	"os"

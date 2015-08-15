@@ -1,17 +1,17 @@
 # Cluster
 
-Manage clusters from the elora cli.
+Manage clusters from the d2k8 cli.
 
 
 ## Create a cluster
 
-Create a cluster to be managed by elora.
+Create a cluster to be managed by d2k8.
 
-`elora cluster create name -skip-consul -skip-weave -weave-pwd pwd -skip-cleanup`
+`d2k8 cluster create name -skip-consul -skip-weave -weave-pwd pwd -skip-cleanup`
 
 | Argument    | Meaning       |
 | ----------- | ------------- |
-| name        | name of the cluster to be identified in elora cli commands |
+| name        | name of the cluster to be identified in d2k8 cli commands |
 | skip-consul | 'true' to skip 'consult' installation for DNS in this cluster |
 | skip-weave  | 'true' to skip 'weave' installation for SDN in this cluster |
 | weave-pwd   | weave router password for traffic encryption. "" for non-encrypted traffic |
@@ -22,7 +22,7 @@ Create a cluster to be managed by elora.
 
 Retrieve cluster information.
 
-`elora cluster inspect name`
+`d2k8 cluster inspect name`
 
 | Argument    | Meaning       |
 | ----------- | ------------- |
@@ -33,14 +33,14 @@ Retrieve cluster information.
 
 Retrieve all clusters information.
 
-`elora cluster list`
+`d2k8 cluster list`
 
 
 ## Delete a cluster
 
-Remove a cluster from elora. Nodes created in this cluster are also deleted.
+Remove a cluster from d2k8. Nodes created in this cluster are also deleted.
 
-`elora cluster remove name`
+`d2k8 cluster remove name`
 
 | Argument    | Meaning       |
 | ----------- | ------------- |

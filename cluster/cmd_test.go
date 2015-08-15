@@ -1,8 +1,8 @@
 package cluster_test
 
 import (
-	"github.com/pchico83/elora/cluster"
-	"github.com/pchico83/elora/utils"
+	"github.com/pchico83/d2k8/cluster"
+	"github.com/pchico83/d2k8/utils"
 	. "gopkg.in/check.v1"
 	"io/ioutil"
 	"os"

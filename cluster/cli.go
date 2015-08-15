@@ -7,7 +7,7 @@ import (
 
 var Commands = cli.Command{
 	Name:  "cluster",
-	Usage: "manage elora clusters",
+	Usage: "manage d2k8 clusters",
 	Subcommands: []cli.Command{
 		{
 			Name:  "create",
@@ -57,7 +57,7 @@ var Commands = cli.Command{
 		{
 			Name:      "list",
 			ShortName: "ls",
-			Usage:     "list the elora current clusters",
+			Usage:     "list the d2k8 current clusters",
 			Action: func(c *cli.Context) {
 				err := ListCmd()
 				if err != nil {

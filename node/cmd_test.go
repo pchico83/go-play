@@ -1,10 +1,10 @@
 package node_test
 
 import (
-	"github.com/pchico83/elora/client"
-	"github.com/pchico83/elora/cluster"
-	"github.com/pchico83/elora/node"
-	"github.com/pchico83/elora/utils"
+	"github.com/pchico83/d2k8/client"
+	"github.com/pchico83/d2k8/cluster"
+	"github.com/pchico83/d2k8/node"
+	"github.com/pchico83/d2k8/utils"
 	. "gopkg.in/check.v1"
 	"io/ioutil"
 	"os"

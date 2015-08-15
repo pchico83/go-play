@@ -3,7 +3,7 @@ package node
 import (
 	"errors"
 	"fmt"
-	"github.com/pchico83/elora/client"
+	"github.com/pchico83/d2k8/client"
 	"path/filepath"
 	"time"
 )

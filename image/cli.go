@@ -9,7 +9,7 @@ import (
 
 var Commands = cli.Command{
 	Name:  "image",
-	Usage: "manage elora images",
+	Usage: "manage d2k8 images",
 	Subcommands: []cli.Command{
 		{
 			Name:  "create",

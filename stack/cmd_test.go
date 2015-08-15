@@ -2,8 +2,8 @@ package stack_test
 
 import (
 	log "github.com/Sirupsen/logrus"
-	"github.com/pchico83/elora/stack"
-	"github.com/pchico83/elora/utils"
+	"github.com/pchico83/d2k8/stack"
+	"github.com/pchico83/d2k8/utils"
 	. "gopkg.in/check.v1"
 	"io/ioutil"
 	"os"

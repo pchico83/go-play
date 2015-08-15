@@ -3,8 +3,8 @@ package node
 import (
 	"fmt"
 	log "github.com/Sirupsen/logrus"
-	"github.com/pchico83/elora/cluster"
-	"github.com/pchico83/elora/utils"
+	"github.com/pchico83/d2k8/cluster"
+	"github.com/pchico83/d2k8/utils"
 	"strings"
 )
 

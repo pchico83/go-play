@@ -1,4 +1,4 @@
-# elora
+# d2k8
 
 Container orchestration tool to (from _docker-compose.yml_ to kubernetes API).
 
@@ -12,11 +12,11 @@ TBD
 
 - Install kubernetes.
 
-- Configure _elora_ to talk to your Kubernetes master.
+- Configure d2k8 to talk to your Kubernetes master.
 
-- Create an _`elora.yml` file.
+- Create an `d2k8.yml` file.
 
-- Execute `elora up`
+- Execute `d2k8 up`
 
 ## Questions
 

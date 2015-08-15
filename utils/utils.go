@@ -2,7 +2,7 @@ package utils
 
 import (
 	log "github.com/Sirupsen/logrus"
-	"github.com/pchico83/elora/client"
+	"github.com/pchico83/d2k8/client"
 	"io/ioutil"
 	"os"
 )

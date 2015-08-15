@@ -3,7 +3,7 @@ package cluster
 import (
 	"fmt"
 	log "github.com/Sirupsen/logrus"
-	"github.com/pchico83/elora/utils"
+	"github.com/pchico83/d2k8/utils"
 )
 
 const (
